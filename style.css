@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    background-color: #212529;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(25, 15px);
+    grid-template-rows: repeat(25, 15px);
+    column-gap: 5px;
+    row-gap: 5px;
+}
+
+.box {
+    display: inline;
+    background-color: #495057;
+    transform: all 500ms linear;
+    cursor: pointer;
+}
+
+.fadeOut {
+    animation: fadeOut 1000ms linear;
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+    }
+}
